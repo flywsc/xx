@@ -1,0 +1,8 @@
+package com.wsc201813;
+
+public class qq {
+	public static void main(String[] args) {
+System.out.println("helleoworld");
+System.out.println("ss");
+	}
+}

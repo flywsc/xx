@@ -1,0 +1,22 @@
+package com.wsc201816;
+
+public class _class {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int cook, hen, chick;
+		for (cook = 1; cook <= 20; cook++) {
+			for (hen = 1; hen <= 33; hen++) {
+				for (chick = 1; chick <= 99; chick += 3) {
+					if (cook * 5  + hen * 3+ chick / 3 == 100) {
+						if (cook + hen + chick == 100) {
+							System.out.println("公鸡为" + cook + "\t母鸡为" + hen + "\t小鸡为" + chick);
+						    System.out.println(cook);
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
