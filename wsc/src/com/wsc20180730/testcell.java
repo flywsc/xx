@@ -7,5 +7,5 @@ public class testcell {
        ce.colo="°×É«";
        ce.pingpai="ÄÏæÚ";
        ce.show();
-	}
+	} 
 }
