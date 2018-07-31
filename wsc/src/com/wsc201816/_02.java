@@ -14,7 +14,7 @@ public class _02 {
 				System.out.println("不喝水");
 				continue;
 			}
-			System.out.println("继续跑步");
+			System.out.println("继续跑步");//测试
 		}
 	}
 }
