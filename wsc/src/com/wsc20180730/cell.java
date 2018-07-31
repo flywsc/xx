@@ -4,6 +4,6 @@ public class cell {
    String colo;
    String pingpai;
    public void show() {
-	   System.out.println("这是一个"+pingpai+"的电池"+"  "+"它是"+colo+"颜色");
+	   System.out.println("这个手机正在给"+pingpai+"的电池充电"+"  "+"它是"+colo);
    }
 }
