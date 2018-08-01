@@ -12,12 +12,21 @@ public class game {
 		System.out.print("请输入你的名字");		
 		play1.play_name = input.next();
 		System.out.println("选择对战的角色");
+		//以下是自动包方法和手动包方法
+		xz(input, computer1);//这里包了一个输入的
+		
+		duizhan(computer1);//这里包里一个方法，名字为duizhan,
+	}
+
+	public void xz(Scanner input, computer computer1) {
 		System.out.println("请输入你的选择1.刘备     2.关羽     3.张飞");
 		computer1.computer_chioce = input.next();
 		computer1.computer_name1 = "刘备";
 		computer1.computer_name2 = "关羽";
 		computer1.computer_name3 = "张飞";
-		
+	}
+
+	public void duizhan(computer computer1) {
 		if (computer1.computer_chioce.equals("1")) {
 			System.out.println("你选择刘备与你对战");
 		} else if (computer1.computer_chioce.equals("2")) {
@@ -26,7 +35,7 @@ public class game {
 			System.out.println("你选了张飞与你对战");
 		}
 	}
-
+//这里就是自动包里一个方法
 	public void stat() {
 		
 		Scanner input = new Scanner(System.in);
