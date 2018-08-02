@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class testHeight {
 
 	public static void main(String[] args) {
-		student[] sts = new student[6];// 定义一个新的数组
+		student[] sts = new student[6];// 用new关键字定义一个新的数组
 		// TODO Auto-generated method stub
 		Scanner input = new Scanner(System.in);
 		higth hg = new higth();// 把身高实例化类
