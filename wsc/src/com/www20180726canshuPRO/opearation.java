@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class opearation {
     Scanner input=new Scanner(System.in);
-    student[]st=new student[5];
+     student[]st=new student[5];
   public void minu(){//菜单系统显示
 	    	System.out.println("***************************");
 	    	System.out.println();
@@ -15,7 +15,7 @@ public class opearation {
 	    }
   
     public void chuShiHua(String name,int key,int weight,int height){//初始化成员
-	   /** 	for(int i=0;i<st.length;i++){
+	   	for(int i=0;i<st.length;i++){
 	    	student st1=new student();
 	    	System.out.print("请输入姓名");
 	    	st[i].name=input.next();
@@ -34,9 +34,42 @@ public class opearation {
 	    	break;
 	    }	    	
 	    	}
-	    	 show();  */  
+	    	 show(); 
     }
-   
+   public void strt(){
+	  
+	  
+	   while(true){
+			System.out.println("请输入你的选择");
+			int chioce=input.nextInt();
+			switch(chioce){//1.初始化   2.增加   3.删除   4.修改   5.查找			 
+			case 1: 
+				chuShiHua(null, chioce, chioce, chioce);
+			    	System.out.println("请选择是否继续  y____n");
+				
+			case 2:
+				add();
+			case 3:
+				delete();
+			case 4:
+				xiugai();
+			case 5:
+				check();
+					System.out.println("是否继续   y ____n");
+				    if("y".equals(input.next())){				    	  
+				    	break;
+				    }else{
+				    	System.out.println("自动返回上一层");
+				    	break;
+				    }
+			case 0:
+				break;
+				default:
+					System.out.println("输入出错");
+					break;
+			}break;
+		}
+   }
     public void check(){
     	System.out.print("请输入姓名");
         String	new_name=input.next();
